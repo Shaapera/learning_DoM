@@ -7,3 +7,8 @@ document.getElementById("demo").innerHTML = text;*/
 
 document.getElementById("p1").innerHTML = "doing well";
 document.getElementById("learning").innerHTML = "learning fast";
+document.getElementById("image").src = "";
+
+/*document.getElementById("demo").innerHTML = "Date : " + Date();*/
+
+document.write(Date());
