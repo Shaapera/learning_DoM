@@ -1,0 +1,9 @@
+/*const x = document.forms["firm1"]
+let text = "";
+for (i = 0; i < x.lenght; i++){
+    text += x.element[i].value + "<br>"
+}
+document.getElementById("demo").innerHTML = text;*/
+
+document.getElementById("p1").innerHTML = "doing well";
+document.getElementById("learning").innerHTML = "learning fast";
