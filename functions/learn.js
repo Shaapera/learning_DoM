@@ -23,3 +23,15 @@ function validateForm() {
     
     }
 }
+
+//validating numeric input
+function myFuntion() {
+    let x = document.getElementById("num").value;
+    let text
+    if (x == NaN || x < 1 || x > 30) {
+        text = "input wrong";
+    } else {
+        text = "input is ok";
+    }
+    document.getElementById("para").innerHTML = text;
+}
