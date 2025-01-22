@@ -37,10 +37,24 @@ function myFuntion() {
 }
 
 //Dom Events
-function changeText(id) {
+/*function changeText(id) {
     id.innerHTML = "opps";
 
 }
 document.getElementById("mybutton").addEventListener("click", function () {
     alert("hello world");
-});
+});*/
+
+//adding many event handlers to the same element
+const x = document.getElementById("btn"); //declaration
+
+x.addEventListener("click", firstEvent);//didnt put the bracket here because, it means calling the function.
+//since its an alert prompt it activated
+x.addEventListener("click", secondEvent);
+function firstEvent() {
+    alert("hello shaapera");
+}
+
+function secondEvent() {
+    alert("i said hello to you")
+}
