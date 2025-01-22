@@ -35,3 +35,12 @@ function myFuntion() {
     }
     document.getElementById("para").innerHTML = text;
 }
+
+//Dom Events
+function changeText(id) {
+    id.innerHTML = "opps";
+
+}
+document.getElementById("mybutton").addEventListener("click", function () {
+    alert("hello world");
+});
