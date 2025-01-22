@@ -46,7 +46,7 @@ document.getElementById("mybutton").addEventListener("click", function () {
 });*/
 
 //adding many event handlers to the same element
-const x = document.getElementById("btn"); //declaration
+/*const x = document.getElementById("btn"); //declaration
 
 x.addEventListener("click", firstEvent);//didnt put the bracket here because, it means calling the function.
 //since its an alert prompt it activated
@@ -57,4 +57,21 @@ function firstEvent() {
 
 function secondEvent() {
     alert("i said hello to you")
+}*/
+
+//adding three events
+const x = document.getElementById("btn");
+x.addEventListener("mouseover", firstEvent);
+x.addEventListener("click", secondEvent);
+x.addEventListener("mouseout", thirdEvent);
+
+function firstEvent() {
+    alert("you hovered the mouse over");
+}
+function secondEvent() {
+    alert("you clicked on the button");
+}
+
+function thirdEvent() {
+    alert("this is a mouse out event")
 }
